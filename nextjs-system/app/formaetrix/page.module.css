@@ -1,0 +1,142 @@
+.hero {
+  min-height: calc(100dvh - var(--nav-height));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--space-20) var(--space-8);
+  position: relative;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  width: 100%;
+}
+
+.heroInner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-16);
+  align-items: center;
+}
+
+.heroText {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.heroTitle {
+  font-family: var(--font-mono);
+  font-size: var(--text-4xl);
+  font-weight: 300;
+  line-height: 1.0;
+  letter-spacing: 0.08em;
+  color: var(--color-white);
+}
+
+.heroSub {
+  font-family: var(--font-serif);
+  font-size: var(--text-lg);
+  color: rgba(245, 245, 245, 0.45);
+  line-height: var(--leading-snug);
+  max-width: 380px;
+}
+
+.heroCtas {
+  display: flex;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
+
+.ctaPrimary {
+  display: inline-block;
+  padding: var(--space-3) var(--space-8);
+  border: 1px solid rgba(245, 245, 245, 0.3);
+  color: var(--color-white);
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  transition: background-color var(--duration-base) var(--ease-out),
+              color var(--duration-base) var(--ease-out);
+}
+
+.ctaPrimary:hover {
+  background-color: rgba(245, 245, 245, 0.08);
+}
+
+.ctaSecondary {
+  display: inline-block;
+  padding: var(--space-3) var(--space-8);
+  color: rgba(245, 245, 245, 0.35);
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  transition: color var(--duration-base) var(--ease-out);
+}
+
+.ctaSecondary:hover {
+  color: var(--color-white);
+}
+
+.heroBlobWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heroBlobFallback {
+  display: none;
+}
+
+.sectionHeader {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: var(--space-10);
+  padding-bottom: var(--space-4);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.sectionTitle {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(245, 245, 245, 0.35);
+  font-weight: 400;
+}
+
+.sectionLink {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: 0.08em;
+  color: rgba(245, 245, 245, 0.3);
+  transition: color var(--duration-slow) var(--ease-out);
+}
+
+.sectionLink:hover {
+  color: var(--color-white);
+}
+
+.bookList {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .heroInner {
+    grid-template-columns: 1fr;
+  }
+
+  .heroBlobWrap {
+    display: none;
+  }
+
+  .heroBlobFallback {
+    display: block;
+  }
+
+  .hero {
+    padding: var(--space-12) var(--space-6);
+  }
+}

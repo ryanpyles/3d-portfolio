@@ -1,0 +1,16 @@
+.header {
+  margin-bottom: var(--space-12);
+}
+
+.intro {
+  margin-top: var(--space-4);
+  font-family: var(--font-serif);
+  font-size: var(--text-lg);
+  color: rgba(245, 245, 245, 0.55);
+  font-style: italic;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+}

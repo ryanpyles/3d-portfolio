@@ -43,61 +43,53 @@
 
 Here is the folder structure of this app.
 
+<!--- FOLDER_STRUCTURE_START --->
 ```bash
 3d-portfolio/
   |- public/
-    |-- desktop_pc/
-    |-- planet/
-    |-- apple-touch-icon.png
-    |-- favicon.ico
-    |-- favicon16.png
-    |-- favicon32.png
   |- src/
     |-- assets/
-        |--- company/
-        |--- projects/
-        |--- socials/
-        |--- tech/
-        |--- testimonials/
-        |--- index.ts
     |-- components/
-        |--- canvas/
-        |--- about.tsx
-        |--- banner.tsx
-        |--- contact.tsx
-        |--- experience.tsx
-        |--- feedbacks.tsx
-        |--- footer.tsx
-        |--- hero.tsx
-        |--- index.ts
-        |--- loader.tsx
-        |--- navbar.tsx
-        |--- tech.tsx
-        |--- works.tsx
+      |--- canvas/
+      |--- about.tsx
+      |--- banner.tsx
+      |--- contact.tsx
+      |--- experience.tsx
+      |--- feedbacks.tsx
+      |--- footer.tsx
+      |--- hero.tsx
+      |--- index.ts
+      |--- loader.tsx
+      |--- navbar.tsx
+      |--- tech.tsx
+      |--- works.tsx
     |-- constants/
-        |--- index.ts
+      |--- index.ts
     |-- hoc/
-        |--- index.ts
-        |--- section-wrapper.tsx
+      |--- index.ts
+      |--- section-wrapper.tsx
     |-- utils/
-        |--- lib.ts
-        |--- motion.ts
+      |--- lib.ts
+      |--- motion.ts
     |-- app.tsx
     |-- env.d.ts
     |-- index.css
     |-- main.tsx
     |-- styles.ts
-  |- .env
   |- .env.example
+  |- .env/.env.local
   |- .gitignore
+  |- bun.lock
   |- index.html
-  |- package-lock.json
+  |- netlify.toml
   |- package.json
   |- postcss.config.cjs
   |- tailwind.config.ts
   |- tsconfig.json
+  |- tsconfig.tsbuildinfo
   |- vite.config.ts
 ```
+<!--- FOLDER_STRUCTURE_END --->
 
 <br />
 
@@ -180,30 +172,34 @@ You might encounter some bugs while using this app. You are more than welcome to
 
 Useful resources and dependencies that are used in 3D Portfolio.
 
-- [@emailjs/browser](https://www.npmjs.com/package/@emailjs/browser): ^3.11.0
-- [@react-three/drei](https://www.npmjs.com/package/@react-three/drei): ^9.96.1
-- [@react-three/fiber](https://www.npmjs.com/package/@react-three/fiber): ^8.13.4
-- [clsx](https://www.npmjs.com/package/clsx): ^2.1.0
-- [framer-motion](https://www.npmjs.com/package/framer-motion): ^10.12.18
-- [maath](https://www.npmjs.com/package/maath): ^0.10.7
-- [react](https://www.npmjs.com/package/react): ^18.2.0
-- [react-dom](https://www.npmjs.com/package/react-dom): ^18.2.0
-- [react-router-dom](https://www.npmjs.com/package/react-router-dom): ^6.21.3
-- [react-tilt](https://www.npmjs.com/package/react-tilt): ^1.0.2
-- [react-vertical-timeline-component](https://www.npmjs.com/package/react-vertical-timeline-component): ^3.6.0
-- [sonner](https://www.npmjs.com/package/sonner): ^1.3.1
-- [tailwind-merge](https://www.npmjs.com/package/tailwind-merge): ^2.2.1
-- [three](https://www.npmjs.com/package/three): ^0.160.1
-- [@types/react](https://www.npmjs.com/package/@types/react): ^18.2.48
-- [@types/react-dom](https://www.npmjs.com/package/@types/react-dom): ^18.2.18
+<!--- DEPENDENCIES_START --->
+- [@emailjs/browser](https://www.npmjs.com/package/@emailjs/browser): ^4.4.1
+- [@react-three/drei](https://www.npmjs.com/package/@react-three/drei): ^10.7.7
+- [@react-three/fiber](https://www.npmjs.com/package/@react-three/fiber): ^9.6.0
+- [@types/react](https://www.npmjs.com/package/@types/react): ^19.2.14
+- [@types/react-dom](https://www.npmjs.com/package/@types/react-dom): ^19.2.3
 - [@types/react-vertical-timeline-component](https://www.npmjs.com/package/@types/react-vertical-timeline-component): ^3.3.6
 - [@types/tailwindcss](https://www.npmjs.com/package/@types/tailwindcss): ^3.1.0
-- [@vitejs/plugin-react](https://www.npmjs.com/package/@vitejs/plugin-react): ^4.0.3
-- [autoprefixer](https://www.npmjs.com/package/autoprefixer): ^10.4.17
-- [postcss](https://www.npmjs.com/package/postcss): ^8.4.31
-- [tailwindcss](https://www.npmjs.com/package/tailwindcss): ^3.3.3
-- [typescript](https://www.npmjs.com/package/typescript): ^5.3.3
-- [vite](https://www.npmjs.com/package/vite): ^5.0.12
+- [@vitejs/plugin-react](https://www.npmjs.com/package/@vitejs/plugin-react): ^6.0.1
+- [autoprefixer](https://www.npmjs.com/package/autoprefixer): ^10.5.0
+- [clsx](https://www.npmjs.com/package/clsx): ^2.1.1
+- [framer-motion](https://www.npmjs.com/package/framer-motion): ^12.38.0
+- [maath](https://www.npmjs.com/package/maath): ^0.10.8
+- [postcss](https://www.npmjs.com/package/postcss): ^8.5.12
+- [react](https://www.npmjs.com/package/react): ^19.2.5
+- [react-dom](https://www.npmjs.com/package/react-dom): ^19.2.5
+- [react-router-dom](https://www.npmjs.com/package/react-router-dom): ^7.14.2
+- [react-tilt](https://www.npmjs.com/package/react-tilt): ^1.0.2
+- [react-vertical-timeline-component](https://www.npmjs.com/package/react-vertical-timeline-component): ^4.0.0
+- [sonner](https://www.npmjs.com/package/sonner): ^2.0.7
+- [tailwind-merge](https://www.npmjs.com/package/tailwind-merge): ^3.5.0
+- [tailwindcss](https://www.npmjs.com/package/tailwindcss): ^3.4.17
+- [three](https://www.npmjs.com/package/three): ^0.184.0
+- [three-stdlib](https://www.npmjs.com/package/three-stdlib): ^2.36.1
+- [typescript](https://www.npmjs.com/package/typescript): ^6.0.3
+- [vite](https://www.npmjs.com/package/vite): ^8.0.10
+
+<!--- DEPENDENCIES_END --->
 
 ## :coffee: Buy Me a Coffee
 
@@ -212,8 +208,7 @@ Useful resources and dependencies that are used in 3D Portfolio.
 ## :rocket: Follow Me
 
 [![GitHub followers](https://img.shields.io/github/followers/sanidhyy?style=social&label=Follow&maxAge=2592000)](https://github.com/sanidhyy "Follow Me")
-[![Twitter](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2FTechnicalShubam)](https://twitter.com/intent/tweet?text=Check+out+this+amazing+app:&url=https%3A%2F%2Fgithub.com%2Fsanidhyy%2F3d-portfolio "Tweet")
-[![YouTube](https://img.shields.io/youtube/channel/subscribers/UCNAz_hUVBG2ZUN8TVm0bmYw)](https://www.youtube.com/@OPGAMER. "Subscribe my YouTube Channel")
+[![Twitter](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fx.com%2F_sanidhyy)](https://x.com/intent/tweet?text=Check+out+this+amazing+app:&url=https%3A%2F%2Fgithub.com%2Fsanidhyy%2F3d-portfolio "Tweet")
 
 ## :books: Learn More
 

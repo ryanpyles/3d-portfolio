@@ -1,0 +1,66 @@
+:root {
+  /* Color */
+  --color-black: #0a0a0a;
+  --color-white: #f5f5f5;
+  --color-accent: #f26a21;
+  --color-mid: #1a1a1a;
+  --color-muted: #888888;
+  --color-border: rgba(245, 245, 245, 0.12);
+  --color-surface: rgba(245, 245, 245, 0.04);
+
+  /* Typography */
+  --font-serif: "Adobe Garamond Pro", Georgia, "Times New Roman", serif;
+  --font-sans: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: "IBM Plex Mono", "Courier New", monospace;
+  --font-body: var(--font-sans);
+
+  /* Scale */
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-md: 1.125rem;
+  --text-lg: 1.25rem;
+  --text-xl: 1.5rem;
+  --text-2xl: 2rem;
+  --text-3xl: 2.75rem;
+  --text-4xl: 3.75rem;
+  --text-5xl: 5rem;
+
+  /* Leading */
+  --leading-tight: 1.15;
+  --leading-snug: 1.35;
+  --leading-normal: 1.6;
+  --leading-relaxed: 1.8;
+
+  /* Spacing */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+  --space-32: 8rem;
+
+  /* Layout */
+  --max-width: 1280px;
+  --content-width: 760px;
+  --nav-height: 72px;
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --duration-fast: 150ms;
+  --duration-base: 300ms;
+  --duration-slow: 500ms;
+  --duration-lazy: 800ms;
+
+  /* Radius */
+  --radius-sm: 2px;
+  --radius-base: 4px;
+  --radius-lg: 8px;
+}

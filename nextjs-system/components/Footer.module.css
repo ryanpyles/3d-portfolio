@@ -1,0 +1,85 @@
+.footer {
+  border-top: 1px solid var(--color-border);
+  padding: var(--space-16) 0 var(--space-8);
+}
+
+.inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-8);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+}
+
+/* Ryan footer */
+.ryanContent {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.name {
+  font-family: var(--font-serif);
+  font-size: var(--text-xl);
+  color: var(--color-white);
+}
+
+.sub {
+  font-size: var(--text-sm);
+  color: var(--color-muted);
+}
+
+.formaetrixLink {
+  display: inline-block;
+  margin-top: var(--space-2);
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: 0.1em;
+  color: rgba(245, 245, 245, 0.4);
+  transition: color var(--duration-fast) var(--ease-out);
+}
+
+.formaetrixLink:hover {
+  color: var(--color-white);
+}
+
+/* Formaetrix footer */
+.formaetrixContent {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.imprint {
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  letter-spacing: 0.15em;
+  color: var(--color-white);
+}
+
+.credit {
+  margin-top: var(--space-2);
+  font-size: var(--text-xs);
+  color: rgba(245, 245, 245, 0.3);
+}
+
+.creditLink {
+  transition: color var(--duration-fast) var(--ease-out);
+}
+
+.creditLink:hover {
+  color: rgba(245, 245, 245, 0.7);
+}
+
+.copy {
+  font-size: var(--text-xs);
+  color: rgba(245, 245, 245, 0.25);
+  letter-spacing: 0.04em;
+}
+
+@media (max-width: 480px) {
+  .inner {
+    padding: 0 var(--space-4);
+  }
+}

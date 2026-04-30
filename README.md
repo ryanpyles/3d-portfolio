@@ -46,6 +46,20 @@ Here is the folder structure of this app.
 <!--- FOLDER_STRUCTURE_START --->
 ```bash
 3d-portfolio/
+  |- nextjs-system/
+    |-- app/
+    |-- components/
+    |-- content/
+    |-- lib/
+    |-- styles/
+    |-- .gitignore
+    |-- middleware.ts
+    |-- next-env.d.ts
+    |-- next.config.mjs
+    |-- package-lock.json
+    |-- package.json
+    |-- postcss.config.mjs
+    |-- tsconfig.json
   |- public/
   |- src/
     |-- assets/

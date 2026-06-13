@@ -225,6 +225,28 @@ export const TESTIMONIALS = [
 // Projects
 export const PROJECTS = [
   {
+    name: "Multi-Language Typography Engine",
+    description:
+      "An adaptive typography system built for global communication — handling RTL Arabic & Hebrew, vertical Japanese tategumi, Cyrillic, Icelandic, and Latin scripts with dynamic font stacks and zero layout breaks.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "typescript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "css-writing-modes",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: project1,
+    source_code_link: "https://github.com/ryanpyles/3d-portfolio",
+    live_site_link: "/typography-demo",
+  },
+  {
     name: "Disney+ Clone",
     description:
       "Disney+ is one of the biggest streaming platforms used by millions of people world-wide and allows us to stream high quality content in 4k and various other formats",
